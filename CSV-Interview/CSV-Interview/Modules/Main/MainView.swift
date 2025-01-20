@@ -40,7 +40,7 @@ struct MainView: View {
             .fileImporter(
                 isPresented: $viewModel.isShowingFileSelector,
                 allowedContentTypes: [.commaSeparatedText],
-                onCompletion: viewModel.onChooseFile(_:)
+                onCompletion: viewModel.onChooseFile
             )
         }
     }
