@@ -35,7 +35,10 @@ final class MainViewModel: ObservableObject {
     
     func showFileSelector() {
         isShowingFileSelector = true
-        isLoading = true
+    }
+    
+    func onFileSelectorChange(_ newValue: Bool) {
+        isLoading = newValue
     }
     
     func onChooseFile(_ result: Result<URL, Error>) {

@@ -31,6 +31,9 @@ struct MainView: View {
                     errorMessage
                 )
             })
+            .onChange(of: viewModel.isShowingFileSelector, { _, newValue in
+                viewModel.onFileSelectorChange(newValue)
+            })
             .navigationTitle("CSV Reader")
             .toolbar {
                 Button(action: viewModel.showFileSelector) {
