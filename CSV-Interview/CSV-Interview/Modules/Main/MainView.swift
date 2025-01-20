@@ -60,7 +60,7 @@ struct MainView: View {
             Text("Welcome to CSV Reader")
                 .font(.title)
             
-            Text("Start selecting a file tapping the \"+\" button")
+            Text("Start by selecting a file by tapping the + button")
         }
     }
     
