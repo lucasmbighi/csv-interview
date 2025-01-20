@@ -80,8 +80,7 @@ struct MainView: View {
                     }
                 } header: {
                     HStack(alignment: .center) {
-                        ForEach(headers.indices, id: \.self) { headerIndex in
-                            let header = headers[headerIndex]
+                        ForEach(headers, id: \.self) { header in
                             Text(header)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .font(.headline)
