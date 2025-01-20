@@ -178,6 +178,7 @@
 					};
 					96B807152D3C2FEB00CF3B0B = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 96B807052D3C2FE900CF3B0B;
 					};
 					96B8071F2D3C2FEC00CF3B0B = {
@@ -450,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N63WMA8228;
@@ -459,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucasbighi.CSV-InterviewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSV-Interview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CSV-Interview";
@@ -469,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N63WMA8228;
